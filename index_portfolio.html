@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Portfolio</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://kit.fontawesome.com/c6c701e286.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <a id="above-scroller" href="#">
+        <i class="fa-solid fa-arrow-up rotation"></i>
+    </a>
+    <section id="home-section">
+
+        <div id="navbar">
+            <nav class="flex-type">
+                <div id="title">
+                    <h1>Portfolio</h1>
+                </div>
+
+                <div id="links_list">
+                    <ul>
+                        <i class="fa-solid fa-xmark" onclick="hide_menu()"></i>
+                        <a href="#home-section">
+                            <li class="list-item">
+                                Home
+                            </li>
+                        </a>
+                        <a href="#about-section">
+                            <li class="list-item">
+                                About
+                            </li>
+                        </a>
+                        <a href="#offers-section">
+                            <li class="list-item">
+                                Services
+                            </li>
+                        </a>
+                        <a href="#skill-section">
+                            <li class="list-item">
+                                Skills
+                            </li>
+                        </a>
+                    
+                        <a href="#message-section">
+                            <li class="list-item">
+                                Contact Us
+                            </li>
+                        </a>
+                    </ul>
+
+                    <i class="fa-solid fa-bars" onclick="show_menu()"></i>
+                </div>
+            </nav>
+        </div>
+
+        <div id="home-content" class="flex-type">
+            <div id="pic-comtainer">
+                <img src="Images/istockphoto-1311857754-170667a.jpg" alt="">
+            </div>
+
+            <div id="content-container">
+                <h3>Hello there</h3>
+                <h1>I'm Umair Hassan</h1>
+                <h2 style="font-weight: 400;">Developer & Programmer</h2>
+                <div class="content-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Punjab University Lahore</p>
+                </div>
+
+                <div class="content-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>0300 2345689</p>
+                </div>
+
+                <div class="content-item">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>example@gmail.com</p>
+                </div>
+
+                <div id="social-media-link" style="margin-top: 15px;">
+                    <ul>
+                        <li>
+                            <a value="1" class="media-link" href="">
+                                <i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+
+                        <li>
+                            <a value="2" class="media-link" href="">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a value="3" class="media-link" href="">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about-section" class="section">
+        <div class="row">
+            <div id="about-info">
+                <h1>
+                    About Me
+                </h1>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa numquam deserunt ex voluptates ad
+                    ducimus
+                    obcaecati excepturi! Aut, iure cupiditate ipsa quas, veritatis modi quidem delectus rem sit nobis
+                    aliquam!
+                </p>
+
+                <a href="" class="round-btn"> Download CV</a>
+            </div>
+
+            <div id="about-pic">
+                <img src="Images/about.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="section" id="offers-section">
+        <h1 style="text-align: center; margin-bottom: 50px;">My Offers</h1>
+        <div class="row">
+
+            <div class="columns">
+                <div class="holder">
+                    <span class="icon-holder">
+                        <i class="fa-solid fa-display"></i>
+                    </span>
+
+                    <h2>Web Development</h2>
+                    <p> Voluptatum pariatur, quisquam tenetur officia expedita non quia adipisci, cumque illo amet
+                        eligendi
+                        eveniet in voluptate libero? Rerum voluptates tempore provident optio?</p>
+
+                </div>
+
+            </div>
+
+            <div class="columns">
+                <div class="holder">
+                    <span class="icon-holder">
+                        <i class="fa-solid fa-terminal"></i>
+                    </span>
+
+                    <h2>Programming Prob</h2>
+                    <p> Voluptatum pariatur, quisquam tenetur officia expedita non quia adipisci, cumque illo amet
+                        eligendi
+                        eveniet in voluptate libero? Rerum voluptates tempore provident optio?</p>
+
+                </div>
+
+            </div>
+
+            <div class="columns">
+                <div class="holder">
+                    <span class="icon-holder">
+                        <i class="fa-solid fa-terminal"></i>
+                    </span>
+
+                    <h2>c++ Programming</h2>
+                    <p> Voluptatum pariatur, quisquam tenetur officia expedita non quia adipisci, cumque illo amet
+                        eligendi
+                        eveniet in voluptate libero? Rerum voluptates tempore provident optio?</p>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill section  -->
+
+    <section class="section" id="skill-section">
+        <h1 style="text-align: center;"> My Skills</h1>
+
+        <div class="row">
+            <div class="column">
+                <div class="progress">
+                    <svg class="progress-circle" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
+                        <circle class="progress-circle-back" cx="80" cy="80" r="74"></circle>
+
+                        <circle class="progress-circle-prog" cx="80" cy="80" r="74"></circle>
+                    </svg>
+                    <div class="progress-text" value="65" data-progress="0">0%</div>
+                    <div class="skill-title">JS</div>
+                </div>
+            </div>
+
+
+            <div class="column">
+                <div class="progress">
+                    <svg class="progress-circle" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
+                        <circle class="progress-circle-back" cx="80" cy="80" r="74"></circle>
+
+                        <circle class="progress-circle-prog" cx="80" cy="80" r="74"></circle>
+                    </svg>
+                    <div class="progress-text" value="70" data-progress="0">0%</div>
+                    <div class="skill-title">C++</div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="progress">
+                    <svg class="progress-circle" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
+                        <circle class="progress-circle-back" cx="80" cy="80" r="74"></circle>
+
+                        <circle class="progress-circle-prog" cx="80" cy="80" r="74"></circle>
+                    </svg>
+                    <div class="progress-text" value="50" data-progress="0">0%</div>
+                    <div class="skill-title">CSS</div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="progress">
+                    <svg class="progress-circle" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
+                        <circle class="progress-circle-back" cx="80" cy="80" r="74"></circle>
+
+                        <circle class="progress-circle-prog" cx="80" cy="80" r="74"></circle>
+                    </svg>
+                    <div class="progress-text" value="50" data-progress="0">0%</div>
+                    <div class="skill-title">Html</div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Message Section -->
+
+<section id="message-section">
+    <h1>Contact Us</h1>
+        <form action="">
+            <div class="form-item">
+                <input name="Name" type="text" placeholder="Name">
+                <input name="email" type="email" placeholder="Email">
+            </div>
+            <div class="form-item">
+               <textarea placeholder="Your Message" name="message" id="message-text" cols="30" rows="10"></textarea>
+            </div>
+            <a href="" class="round-btn"> Contact</a>
+        </form>
+</section>
+
+<script src="/static/navbar_handling.js"></script>
+    <script src="/static/script.js"></script>
+    <script src="/static/smooth_scrolling.js"></script>
+    <script src="/static/social_media_links.js"></script>
+</body>
+
+</html>
