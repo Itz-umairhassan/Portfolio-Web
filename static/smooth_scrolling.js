@@ -35,3 +35,15 @@ document.querySelector('#above-scroller').addEventListener('click', e => {
         first = true
     }
 })
+
+window.addEventListener('scroll', () => {
+    console.log(scrollY)
+    if (scrollY < 670) {
+        cursor.style.transform = 'rotate(180deg)'
+        first = true
+    }
+    else if (scrollY > 670) {
+        cursor.style.transform = 'rotate(360deg)'
+        first = false
+    }
+})

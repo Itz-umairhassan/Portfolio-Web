@@ -46,7 +46,7 @@
                                 Skills
                             </li>
                         </a>
-                    
+
                         <a href="#message-section">
                             <li class="list-item">
                                 Contact Us
@@ -194,6 +194,7 @@
         <h1 style="text-align: center;"> My Skills</h1>
 
         <div class="row">
+            {{#each dataArr}}
             <div class="column">
                 <div class="progress">
                     <svg class="progress-circle" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
@@ -201,72 +202,39 @@
 
                         <circle class="progress-circle-prog" cx="80" cy="80" r="74"></circle>
                     </svg>
-                    <div class="progress-text" value="65" data-progress="0">0%</div>
-                    <div class="skill-title">JS</div>
+                    <div class="progress-text" value="{{this.val}}" data-progress="0">0%</div>
+                    <div class="skill-title">{{this.skill}}</div>
                 </div>
             </div>
 
+            {{/each}}
 
-            <div class="column">
-                <div class="progress">
-                    <svg class="progress-circle" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
-                        <circle class="progress-circle-back" cx="80" cy="80" r="74"></circle>
-
-                        <circle class="progress-circle-prog" cx="80" cy="80" r="74"></circle>
-                    </svg>
-                    <div class="progress-text" value="70" data-progress="0">0%</div>
-                    <div class="skill-title">C++</div>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="progress">
-                    <svg class="progress-circle" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
-                        <circle class="progress-circle-back" cx="80" cy="80" r="74"></circle>
-
-                        <circle class="progress-circle-prog" cx="80" cy="80" r="74"></circle>
-                    </svg>
-                    <div class="progress-text" value="50" data-progress="0">0%</div>
-                    <div class="skill-title">CSS</div>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="progress">
-                    <svg class="progress-circle" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg">
-                        <circle class="progress-circle-back" cx="80" cy="80" r="74"></circle>
-
-                        <circle class="progress-circle-prog" cx="80" cy="80" r="74"></circle>
-                    </svg>
-                    <div class="progress-text" value="50" data-progress="0">0%</div>
-                    <div class="skill-title">Html</div>
-
-                </div>
-            </div>
         </div>
 
     </section>
 
     <!-- Message Section -->
 
-<section id="message-section">
-    <h1>Contact Us</h1>
-        <form action="">
+    <section id="message-section">
+        <h1>Contact Us</h1>
+        <form action="/submission" method="post" id="my-form">
             <div class="form-item">
-                <input name="Name" type="text" placeholder="Name">
+                <input id="name" name="Name" type="text" placeholder="Name">
                 <input name="email" type="email" placeholder="Email">
             </div>
             <div class="form-item">
-               <textarea placeholder="Your Message" name="message" id="message-text" cols="30" rows="10"></textarea>
+                <textarea id="message" placeholder="Your Message" name="message" id="message-text" cols="30"
+                    rows="10"></textarea>
             </div>
-            <a href="" class="round-btn"> Contact</a>
+            <a href="" class="round-btn" id="submit-button"> Contact</a>
         </form>
-</section>
+    </section>
 
-<script src="/static/navbar_handling.js"></script>
+    <script src="/static/navbar_handling.js"></script>
     <script src="/static/script.js"></script>
     <script src="/static/smooth_scrolling.js"></script>
     <script src="/static/social_media_links.js"></script>
+    <script src="/static/regex_match.js"></script>
 </body>
 
 </html>
